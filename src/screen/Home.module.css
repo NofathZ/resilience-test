@@ -1,0 +1,48 @@
+.head-rectangle {
+  width: 855px;
+  height: 586px;
+  background: url("/src/assets/home-rectangle-1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 84px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+
+.description-box {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.description {
+  /* margin: 70px auto; */
+  display: grid;
+  grid-template-columns: 599px auto;
+}
+
+.goals {
+  padding-top: 89px;
+  padding-bottom: 89px;
+}
+
+.goals-desc {
+  display: grid;
+  grid-template-columns: 393px auto;
+}
+
+.goals-item {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 36px;
+}
+
+.goals-item .item {
+  border-radius: 10px;
+}

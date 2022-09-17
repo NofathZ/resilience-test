@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Regular Type */
+.regular-head-1 {
+  /* Header 1/Regular */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.regular-head-2 {
+  /* Header 2/Regular */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.regular-head-3 {
+  /* Header 3/Regular */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.regular-normal {
+  /* Normal/Regular */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.regular-small {
+  /* Small/Regular */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.regular-tiny {
+  /* Tiny/Regular */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Medium Type */
+.medium-head-1 {
+  /* Header 1/Medium */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  /* font-feature-settings: 'cv11' on, 'cv02' on, 'cv03' on, 'cv04' on; */
+}
+.medium-head-2 {
+  /* Header 2/Medium */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.medium-head-3 {
+  /* Header 3/Medium */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.medium-normal {
+  /* Normal/Medium */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.medium-small {
+  /* Small/Medium */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.medium-tiny {
+  /* Tiny/Medium */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Bold Type */
+.bold-head-1 {
+  /* Header 1/Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.bold-head-2 {
+  /* Header 2/Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.bold-head-3 {
+  /* Header 3/Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.bold-normal {
+  /* Normal/Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.bold-small {
+  /* Small/Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.bold-tiny {
+  /* Tiny/Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ExtraBold */
+.extra-bold-head-1 {
+  /* Header 1/Extra Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
-
-.App-link {
-  color: #61dafb;
+.extra-bold-head-2 {
+  /* Header 2/Extra Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 48px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extra-bold-head-3 {
+  /* Header 3/Extra Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.extra-bold-normal {
+  /* Normal/Extra Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.extra-bold-small {
+  /* Small/Extra Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+.extra-bold-tiny {
+  /* Tiny/Extra Bold */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }

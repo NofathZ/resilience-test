@@ -1,0 +1,7 @@
+.card {
+  height: 320px;
+  border-radius: 20px;
+  padding: 60px 56px;
+  display: grid;
+  grid-template-columns: auto 425px;
+}
