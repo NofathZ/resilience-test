@@ -45,4 +45,14 @@
 
 .goals-item .item {
   border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(55, 184, 136, 0.1);
+}
+
+.card {
+  height: 320px;
+  border-radius: 20px;
+  padding: 60px 56px;
+  display: grid;
+  grid-template-columns: auto 425px;
+  overflow: hidden;
 }

@@ -5,6 +5,6 @@ const style = {
   margin: "0 auto",
 };
 
-export default function Container({ children }: { children: ReactNode }) {
-  return <div className="w-full h-full" style={style}>{children}</div>;
+export default function Container({ children, className }: { children: ReactNode, className?: string }) {
+  return <div className={`${className} w-full h-full m-5`} style={style}>{children}</div>;
 }

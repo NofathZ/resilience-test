@@ -1,6 +1,6 @@
 const style = {
   height: "88px",
-  filter: "drop-shadow(0px 4px 15px rgba(55, 184, 136, 0.1));"
+  filter: "drop-shadow(0px 4px 15px rgba(55, 184, 136, 0.1))"
 };
 
 export default function Header() {

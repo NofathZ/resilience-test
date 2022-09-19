@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Button } from "../components/Button/Button";
 import LayoutDefault from "../layouts/Default";
 import style from "./Home.module.css";
@@ -7,9 +8,16 @@ import HomeDescImage from "../assets/home-desc.png";
 import PencilGreenIcon from "../assets/icon/pencil-green.svg";
 import ArrowTopIcon from "../assets/icon/arrow-top-red.svg";
 import PersonIcon from "../assets/icon/person-yellow.svg";
-import CardRedirect from "../components/CardRedirect/CardRedirect";
+import IkutiTesImage from "../assets/ikuti-tes.png";
+import Modal from "../components/Modal/Modal";
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <LayoutDefault>
       <div className="flex justify-center items-center mb-10">
@@ -31,12 +39,14 @@ export default function Home() {
               menarik yang telah tervalidasi
             </p>
             <div className="flex justify-center items-center">
-              <Button>Ikuti Tes</Button>
+              <Button onClick={() => setShowModal((prev: boolean) => !prev)}>
+                Ikuti Tes
+              </Button>
             </div>
           </div>
         </div>
       </div>
-      <div className={`${style['description-box']} mb-10`}>
+      <div className={`${style["description-box"]} mb-10`}>
         <Container>
           <div className={`w-full ${style["description"]}`}>
             <img src={HomeDescImage} alt="" />
@@ -50,10 +60,11 @@ export default function Home() {
                 kondisi tersebut.
               </p>
               <p className="regular-normal text-system-black">
-                Seseorang dengan resiliensi yang baik biasanya cenderung memiliki
-                keyakian, rasa percaya terhadap diri sendiri serta orang lain,
-                harapan, tujuan hidup, serta rencana masa depan yang diikuti
-                ambisi positif untuk mampu bertahan di berbagai kesulitan.
+                Seseorang dengan resiliensi yang baik biasanya cenderung
+                memiliki keyakian, rasa percaya terhadap diri sendiri serta
+                orang lain, harapan, tujuan hidup, serta rencana masa depan yang
+                diikuti ambisi positif untuk mampu bertahan di berbagai
+                kesulitan.
               </p>
             </div>
           </div>
@@ -115,9 +126,26 @@ export default function Home() {
       </div>
       <div className="py-10 mb-10">
         <Container>
-          <CardRedirect />
+          <div
+            className={`${style["card"]} w-full bg-brand-primary-tint relative`}
+          >
+            <div>
+              <p className="bold-head-1 text-system-black mb-6">
+                Penasaran dengan tingkat resiliensi yang dimiliki?
+              </p>
+              <Button onClick={() => setShowModal((prev: boolean) => !prev)}>
+                Ikuti Tes
+              </Button>
+            </div>
+            <img
+              src={IkutiTesImage}
+              alt=""
+              className="absolute top-0 right-0"
+            />
+          </div>
         </Container>
       </div>
+      <Modal show={showModal} setShow={setShowModal}></Modal>
     </LayoutDefault>
   );
 }

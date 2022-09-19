@@ -1,0 +1,14 @@
+.modal-bg {
+  bottom: 0;
+  background-color: #0000001a
+}
+
+.modal-box {
+  transition: 0.4s;
+  top: -600px
+}
+
+.modal-show {
+  top: 100px;
+  transition: 0.4s;
+}

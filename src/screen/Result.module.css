@@ -1,0 +1,26 @@
+.header {
+  margin-top: 88px;
+}
+
+.cat-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 84px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+
+.solutions {
+  display: grid;
+  grid-template-columns: 440px auto;
+}
+
+.card {
+  height: 320px;
+  border-radius: 20px;
+  padding: 60px 56px;
+  display: grid;
+  grid-template-columns: auto 425px;
+  overflow: hidden;
+}
