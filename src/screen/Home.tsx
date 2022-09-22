@@ -15,8 +15,8 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <LayoutDefault>
@@ -31,9 +31,14 @@ export default function Home() {
             <p className="medium-tiny text-brand-primary text-center mb-1">
               Nicholson McBride Resilience Questionnaire (NMRQ)
             </p>
-            <p className={`${style["title"]} text-center mb-4`}>
-              Ketahui <b>Resiliensimu</b> Pahami Dirimu
-            </p>
+            <div className="text-system-black text-center   mb-4">
+              <span className={style["title"]}>Ketahui</span>
+              <span className={style["title-2"]}>
+                {" "}
+                <b>Resiliensimu</b>{" "}
+              </span>
+              <span className={style["title"]}>Pahami Dirimu</span>
+            </div>
             <p className="regular-normal text-center px-10 mb-12">
               Ikuti tes untuk mengetahui tingkat resiliensimu dan dapatkan saran
               menarik yang telah tervalidasi

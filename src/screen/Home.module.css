@@ -16,6 +16,15 @@
   /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
 
+.title-2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 84px;
+  /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+
 .description-box {
   padding-top: 70px;
   padding-bottom: 70px;

@@ -6,8 +6,34 @@ import { ButtonWhatsapp } from "../components/Button/Button";
 
 import ResultHeadImage from "../assets/result-head.png";
 import TanyaAhliImage from "../assets/tanya-ahli.png";
+import { useParams } from "react-router-dom";
 
 export default function Result() {
+  const { type } = useParams();
+
+  const [scoreDesc] = useState([
+    {
+      category: "Developing",
+      description:
+        "Anda merupakan seseorang yang tidak ingin dikasihani saat mengalami kesulitan dan masih menunjukkan rasa ingin bangkit serta menghadapi masalah yang anda alami.",
+    },
+    {
+      category: "Established",
+      description:
+        "Pada level ini anda dapat mengalami stres saat berada di situasi yang sulit. Namun saat mengalami stres, anda tidak mudah menyerah dan mencoba untuk bangkit dalam menghadapi permasalahan yang anda alami.",
+    },
+    {
+      category: "Strong",
+      description:
+        "Memiliki resilient coping cukup baik dan dalam situasi sulit, anda juga mudah mengubah kesulitan menjadi peluang.",
+    },
+    {
+      category: "Exceptional",
+      description:
+        "Level ini merupakan level resilient coping tertinggi yang berarti anda memiliki ketahanan yang sangat baik dan pada level ini anda selalu bangkit meskipun mengalami berbagai kesulitan dalam hidup.",
+    },
+  ]);
+
   const [showSolution, setShowSolution] = useState(0);
   const [solutions] = useState([
     {
@@ -161,7 +187,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">Mengelola Stress</p>
-          <p className="regular-small text-system-black text-justify">
+          <p className="regular-small text-system-black text-justify mb-8">
             Stress merupakan bagian dari kehiduan kita. Ketika tubuh merasakan
             ancaman (atau stresor), tubuh akan menjadi sangat waspada, dan
             begitu ancaman itu berlalu, tubuh dengan cepat pulih. Setidaknya
@@ -171,11 +197,14 @@ export default function Result() {
             henti-hentinya atau terlalu banyak, tubuh Anda mungkin berada dalam
             keadaan siaga tinggi yang konstan, yang menyebabkan konsentrasi yang
             buruk, suasana hati yang buruk, kelelahan, dan masalah kesehatan
-            mental dan fisik. Ketika stres menjadi kronis, tubuh tidak dapat
-            kembali berfungsi normal. Stres kronis dapat dikaitkan dengan
-            kondisi kesehatan seperti penyakit jantung, tekanan darah tinggi,
-            diabetes, depresi, dan kecemasan. Untuk mencegah hal tersebut, ada
-            beberapa hal yang bisa dilakukan untuk mengatasi stress :
+            mental dan fisik.
+          </p>
+          <p className="regular-small text-system-black text-justify">
+            Ketika stres menjadi kronis, tubuh tidak dapat kembali berfungsi
+            normal. Stres kronis dapat dikaitkan dengan kondisi kesehatan
+            seperti penyakit jantung, tekanan darah tinggi, diabetes, depresi,
+            dan kecemasan. Untuk mencegah hal tersebut, ada beberapa hal yang
+            bisa dilakukan untuk mengatasi stress :
           </p>
           <ol className="regular-small text-system-black text-justify list-decimal pl-5">
             <li>Kenali dan lawan tanda-tanda stress.</li>
@@ -287,8 +316,8 @@ export default function Result() {
   ]);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <LayoutDefault>
@@ -299,15 +328,21 @@ export default function Result() {
             <p className="medium-normal text-brand-primary">
               <b>Hasil Tes Kamu</b>
             </p>
-            <p className={`${style["cat-title"]} text-system-black mb-4`}>
-              Established level
-            </p>
-            <p className="regular-normal text-system-black text-justify">
-              Pada level ini kamu dapat mengalami stres saat berada di situasi
-              yang sulit. Namun saat mengalami stres, kamu tidak mudah menyerah
-              dan mencoba untuk bangkit dalam menghadapi permasalahan yang anda
-              alami
-            </p>
+            {scoreDesc.map(
+              (desc) =>
+                desc.category.toLowerCase() === type && (
+                  <div key={desc.category}>
+                    <p
+                      className={`${style["cat-title"]} text-system-black mb-4`}
+                    >
+                      {desc.category}
+                    </p>
+                    <p className="regular-normal text-system-black text-justify">
+                      {desc.description}
+                    </p>
+                  </div>
+                )
+            )}
           </div>
         </div>
       </Container>
