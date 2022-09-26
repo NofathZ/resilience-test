@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Button } from "../components/Button/Button";
-import LayoutDefault from "../layouts/Default";
+import LayoutBackgroundChange from "../layouts/BackgroundChange";
 import style from "./Home.module.css";
 import Container from "../components/Container/Container";
 
@@ -9,17 +9,15 @@ import PencilGreenIcon from "../assets/icon/pencil-green.svg";
 import ArrowTopIcon from "../assets/icon/arrow-top-red.svg";
 import PersonIcon from "../assets/icon/person-yellow.svg";
 import IkutiTesImage from "../assets/ikuti-tes.png";
-import Modal from "../components/Modal/Modal";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <LayoutDefault>
+    <LayoutBackgroundChange>
       <div className="flex justify-center items-center mb-10">
         <div
           className={`${style["head-rectangle"]} px-32 flex justify-center items-center pt-20`}
@@ -44,9 +42,11 @@ export default function Home() {
               menarik yang telah tervalidasi
             </p>
             <div className="flex justify-center items-center">
-              <Button onClick={() => setShowModal((prev: boolean) => !prev)}>
-                Ikuti Tes
-              </Button>
+            <Link to={"/panduan"}>
+
+              <Button>Ikuti Tes</Button>
+            </Link>
+
             </div>
           </div>
         </div>
@@ -138,9 +138,11 @@ export default function Home() {
               <p className="bold-head-1 text-system-black mb-6">
                 Penasaran dengan tingkat resiliensi yang dimiliki?
               </p>
-              <Button onClick={() => setShowModal((prev: boolean) => !prev)}>
-                Ikuti Tes
-              </Button>
+            <Link to={"/panduan"}>
+
+            </Link>
+              <Button>Ikuti Tes</Button>
+
             </div>
             <img
               src={IkutiTesImage}
@@ -150,7 +152,6 @@ export default function Home() {
           </div>
         </Container>
       </div>
-      <Modal show={showModal} setShow={setShowModal}></Modal>
-    </LayoutDefault>
+    </LayoutBackgroundChange>
   );
 }

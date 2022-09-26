@@ -54,14 +54,19 @@ function ButtonWhatsapp({ children }: { children: ReactNode }) {
 function ButtonOutline({
   children,
   onClick,
+  minWidth,
 }: {
   children: ReactNode;
   onClick?: () => void;
+  minWidth?: string;
 }) {
   return (
     <div
       onClick={onClick}
-      className={`bg-brand-secondary-tint text-brand-secondary px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-outline"]}`}
+      className={`text-center bg-brand-secondary-tint text-brand-secondary px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-outline"]}`}
+      style={{
+        minWidth: minWidth,
+      }}
     >
       {children}
     </div>
