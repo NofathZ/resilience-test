@@ -49,11 +49,11 @@ export default function Guide() {
               <ButtonOutline minWidth="201px">Batal</ButtonOutline>
             </Link>
             <Link className="show-on-mobile-only" to={"/kuesioner"}>
-              <Button>OK, Ikuti Tes</Button>
+              <Button minWidth="201px">OK, Ikuti Tes</Button>
             </Link>
             <div className="mx-2 mobile:my-4"></div>
             <Link className="show-on-desktop-only" to={"/kuesioner"}>
-              <Button>OK, Ikuti Tes</Button>
+              <Button minWidth="201px">OK, Ikuti Tes</Button>
             </Link>
             <Link className="show-on-mobile-only" to={"/"}>
               <ButtonOutline minWidth="201px">Batal</ButtonOutline>

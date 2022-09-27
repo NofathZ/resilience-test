@@ -3,10 +3,10 @@ import style from "./Result.module.css";
 import { useState, useEffect } from "react";
 import Container from "../components/Container/Container";
 import { ButtonWhatsapp } from "../components/Button/Button";
+import { useParams } from "react-router-dom";
 
 import ResultHeadImage from "../assets/result-head.png";
 import TanyaAhliImage from "../assets/tanya-ahli.png";
-import { useParams } from "react-router-dom";
 
 export default function Result() {
   const { type } = useParams();
@@ -315,7 +315,7 @@ export default function Result() {
     },
   ]);
 
-  const [showSolutionsMobile, setShowSolutionMobile] = useState(2);
+  const [showSolutionsMobile, setShowSolutionMobile] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -377,12 +377,81 @@ export default function Result() {
               </div>
             ))}
           </div>
-          <div className="mb-6">
+          <div className="show-on-desktop-only">
+            {solutions[showSolution].value}
+          </div>
+          <div className="mb-6 show-on-mobile-only">
             {solutions[showSolutionsMobile * 2 - 1 - 1].value}
           </div>
-          <div className="mb-6">
+          <div className="mb-6 show-on-mobile-only">
             {solutions[showSolutionsMobile * 2 - 1].value}
           </div>
+        </div>
+        <div className="mobile:px-4 flex justify-between items-center">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={() =>
+              setShowSolutionMobile((prev) => {
+                if (prev - 1 > 0) return prev - 1;
+                return prev;
+              })
+            }
+          >
+            <path
+              d="M17 4L9 12L17 20"
+              stroke="#323232"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <>
+            {Array.apply(null, Array(5)).map((x, idx) => {
+              return (
+                <button
+                  key={idx}
+                  className={`bold-normal ${
+                    showSolutionsMobile === idx + 1
+                      ? "bg-brand-secondary text-system-white"
+                      : "text-brand-secondary"
+                  }`}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "5px",
+                  }}
+                  onClick={() => setShowSolutionMobile(idx + 1)}
+                >
+                  {idx + 1}
+                </button>
+              );
+            })}
+          </>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={() =>
+              setShowSolutionMobile((prev) => {
+                if (prev + 1 < 6) return prev + 1;
+                return prev;
+              })
+            }
+          >
+            <path
+              d="M7 4L15 12L7 20"
+              stroke="#323232"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </div>
       </Container>
       <div className="py-10 my-20 mobile:px-4">

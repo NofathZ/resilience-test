@@ -1,10 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap"); */
 
 /* Regular Type */
 .regular-head-1 {
   /* Header 1/Regular */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -13,7 +12,7 @@
 }
 .regular-head-2 {
   /* Header 2/Regular */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -22,7 +21,7 @@
 }
 .regular-head-3 {
   /* Header 3/Regular */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -31,7 +30,7 @@
 }
 .regular-normal {
   /* Normal/Regular */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -40,7 +39,7 @@
 }
 .regular-small {
   /* Small/Regular */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -49,18 +48,74 @@
 }
 .regular-tiny {
   /* Tiny/Regular */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
+@media screen and (max-width: 960px) {
+  .regular-head-1 {
+    /* Header 3/Regular */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .regular-head-2 {
+    /* Normal/Regular */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .regular-head-3 {
+    /* Small/Regular */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .regular-normal {
+    /* Tiny/Regular */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .regular-small {
+    /* Tiny/Regular */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .regular-tiny {
+    /* Tiny/Regular */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+}
 
 /* Medium Type */
 .medium-head-1 {
   /* Header 1/Medium */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -69,7 +124,7 @@
 }
 .medium-head-2 {
   /* Header 2/Medium */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -78,7 +133,7 @@
 }
 .medium-head-3 {
   /* Header 3/Medium */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -87,7 +142,7 @@
 }
 .medium-normal {
   /* Normal/Medium */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -96,7 +151,7 @@
 }
 .medium-small {
   /* Small/Medium */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -105,18 +160,74 @@
 }
 .medium-tiny {
   /* Tiny/Medium */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on;
 }
+@media screen and (max-width: 960px) {
+  .medium-head-1 {
+    /* Header 3/Medium */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .medium-head-2 {
+    /* Normal/Medium */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .medium-head-3 {
+    /* Small/Medium */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .medium-normal {
+    /* Tiny/Medium */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on;
+  }
+  .medium-small {
+    /* Tiny/Medium */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on;
+  }
+  .medium-tiny {
+    /* Tiny/Medium */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on;
+  }
+}
 
 /* Bold Type */
 .bold-head-1 {
   /* Header 1/Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -125,7 +236,7 @@
 }
 .bold-head-2 {
   /* Header 2/Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -134,7 +245,7 @@
 }
 .bold-head-3 {
   /* Header 3/Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -143,7 +254,7 @@
 }
 .bold-normal {
   /* Normal/Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -152,7 +263,7 @@
 }
 .bold-small {
   /* Small/Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -161,18 +272,74 @@
 }
 .bold-tiny {
   /* Tiny/Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
+@media screen and (max-width: 960px) {
+  .bold-head-1 {
+    /* Header 3/Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .bold-head-2 {
+    /* Normal/Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .bold-head-3 {
+    /* Small/Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .bold-normal {
+    /* Tiny/Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .bold-small {
+    /* Tiny/Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .bold-tiny {
+    /* Tiny/Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+}
 
 /* ExtraBold */
 .extra-bold-head-1 {
   /* Header 1/Extra Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -181,7 +348,7 @@
 }
 .extra-bold-head-2 {
   /* Header 2/Extra Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -190,7 +357,7 @@
 }
 .extra-bold-head-3 {
   /* Header 3/Extra Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -199,7 +366,7 @@
 }
 .extra-bold-normal {
   /* Normal/Extra Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -208,7 +375,7 @@
 }
 .extra-bold-small {
   /* Small/Extra Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -217,10 +384,66 @@
 }
 .extra-bold-tiny {
   /* Tiny/Extra Bold */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
   /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+@media screen and (max-width: 960px) {
+  .extra-bold-head-1 {
+    /* Header 3/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .extra-bold-head-2 {
+    /* Normal/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .extra-bold-head-3 {
+    /* Small/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 28px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .extra-bold-normal {
+    /* Tiny/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .extra-bold-small {
+    /* Tiny/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
+  .extra-bold-tiny {
+    /* Tiny/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
 }

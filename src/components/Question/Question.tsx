@@ -63,12 +63,12 @@ export default function Question({
           Sangat Setuju
         </p>
       </div>
-      <div className="flex justify-between items-center show-on-mobile-only">
-        <p className="regular-tiny text-system-black text-center">
+      <div className="flex justify-between items-center show-on-mobile-only mt-2">
+        <p className="regular-tiny text-system-black text-left">
           Sangat <br />
           Tidak Setuju
         </p>
-        <p className="regular-tiny text-system-black text-center">
+        <p className="regular-tiny text-system-black text-right">
           Sangat <br />
           Setuju
         </p>

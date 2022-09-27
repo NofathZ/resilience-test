@@ -6,14 +6,19 @@ import WhatsappLogo from "../../assets/icon/whatsapp.png";
 function Button({
   children,
   onClick,
+  minWidth,
 }: {
   children: ReactNode;
   onClick?: () => void;
+  minWidth?: string;
 }) {
   return (
     <div
       onClick={onClick}
-      className={`bg-brand-secondary text-system-white px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-default"]}`}
+      className={`bg-brand-secondary text-system-white px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-default"]} flex justify-center items-center`}
+      style={{
+        minWidth: minWidth,
+      }}
     >
       {children}
     </div>

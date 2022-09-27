@@ -4,13 +4,11 @@
 }
 
 .header .text {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 56px;
   line-height: 84px;
-  /* identical to box height, or 150% */
-
   /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
 }
 
@@ -21,9 +19,14 @@
   }
 }
 
-@media screen and (max-width: 961px) {
-  /* .header {
-    height: auto;
-    padding-bottom: 68px;
-  } */
+@media screen and (max-width: 960px) {
+  .header .text {
+    /* Header 1/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+  }
 }

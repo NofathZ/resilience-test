@@ -1,9 +1,9 @@
 .header {
-  margin-top: 88px;
+  margin-top: 20px;
 }
 
 .cat-title {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 56px;
@@ -33,5 +33,15 @@
   .card {
     height: auto;
     grid-template-columns: auto;
+  }
+
+  .cat-title {
+    /* Header 1/Extra Bold */
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
   }
 }
