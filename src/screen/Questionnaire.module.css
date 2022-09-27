@@ -1,6 +1,5 @@
 .header {
   height: 360px;
-  margin-top: 88px;
   padding-top: 68px;
 }
 
@@ -13,4 +12,18 @@
   /* identical to box height, or 150% */
 
   /* font-feature-settings: "cv11" on, "cv02" on, "cv03" on, "cv04" on; */
+}
+
+@media screen and (max-width: 1165px) {
+  .header {
+    height: auto;
+    padding-bottom: 68px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  /* .header {
+    height: auto;
+    padding-bottom: 68px;
+  } */
 }

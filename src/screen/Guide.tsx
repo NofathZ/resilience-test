@@ -6,12 +6,12 @@ import LayoutDefault from "../layouts/Default";
 export default function Guide() {
   return (
     <LayoutDefault>
-      <div style={{ paddingTop: "152px" }}>
+      <div className="mobile:px-4">
         <Container>
           <p className="bold-head-2 text-system-black text-center mb-4">
             Baca panduan pengisiannya, yuk!
           </p>
-          <ol className="regular-normal text-system-black list-decimal pl-6 mb-4">
+          <ol className="regular-normal text-system-black list-decimal pl-6 mb-4 text-justify">
             <li>
               Gak ada jawaban yang benar atau salah. Isilah dengan jujur sesuai
               kepribadianmu.
@@ -44,13 +44,19 @@ export default function Guide() {
             untuk bangkit saat menghadapi situasi sulit.
           </p>
 
-          <div className="flex justify-center items-center mt-16">
-            <Link to={"/"}>
+          <div className="flex justify-center items-center mobile:flex-col desktop:flex-row mt-16 mb-10">
+            <Link className="show-on-desktop-only" to={"/"}>
               <ButtonOutline minWidth="201px">Batal</ButtonOutline>
             </Link>
-            <div className="mx-2"></div>
-            <Link to={"/kuesioner"}>
+            <Link className="show-on-mobile-only" to={"/kuesioner"}>
               <Button>OK, Ikuti Tes</Button>
+            </Link>
+            <div className="mx-2 mobile:my-4"></div>
+            <Link className="show-on-desktop-only" to={"/kuesioner"}>
+              <Button>OK, Ikuti Tes</Button>
+            </Link>
+            <Link className="show-on-mobile-only" to={"/"}>
+              <ButtonOutline minWidth="201px">Batal</ButtonOutline>
             </Link>
           </div>
         </Container>

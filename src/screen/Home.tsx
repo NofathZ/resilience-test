@@ -18,9 +18,9 @@ export default function Home() {
 
   return (
     <LayoutBackgroundChange>
-      <div className="flex justify-center items-center mb-10">
+      <div className="flex justify-center items-center mb-10 mobile:px-4">
         <div
-          className={`${style["head-rectangle"]} px-32 flex justify-center items-center pt-20`}
+          className={`${style["head-rectangle"]} desktop:px-32 flex justify-center items-center pt-20`}
         >
           <div>
             <p className="medium-tiny text-brand-primary text-center mb-1">
@@ -42,19 +42,20 @@ export default function Home() {
               menarik yang telah tervalidasi
             </p>
             <div className="flex justify-center items-center">
-            <Link to={"/panduan"}>
-
-              <Button>Ikuti Tes</Button>
-            </Link>
-
+              <Link to={"/panduan"}>
+                <Button>Ikuti Tes</Button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className={`${style["description-box"]} mb-10`}>
+      <div className={`${style["description-box"]} mb-10 mobile:px-4`}>
         <Container>
           <div className={`w-full ${style["description"]}`}>
-            <img src={HomeDescImage} alt="" />
+            <img className="show-on-desktop-only" src={HomeDescImage} alt="" />
+            <div className="show-on-mobile-only flex justify-center mb-6">
+              <img width={282} src={HomeDescImage} alt="" />
+            </div>
             <div className="flex flex-col justify-center">
               <p className="bold-head-1 text-system-black mb-6">
                 Apa itu Resiliensi?
@@ -75,7 +76,9 @@ export default function Home() {
           </div>
         </Container>
       </div>
-      <div className={`w-full ${style["goals"]} bg-brand-secondary-tint mb-10`}>
+      <div
+        className={`w-full ${style["goals"]} bg-brand-secondary-tint mb-10 mobile:px-4`}
+      >
         <Container>
           <div className={`${style["goals-desc"]} mb-10`}>
             <p className="bold-head-1 text-brand-secondary">Tes Resiliensi</p>
@@ -94,37 +97,43 @@ export default function Home() {
           </div>
           <div className={`${style["goals-item"]}`}>
             <div
-              className={`bg-system-white ${style["item"]} px-4 py-6 flex flex-col justify-center items-center`}
+              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
             >
-              <img className="mb-2" src={PencilGreenIcon} alt="" />
-              <p className="bold-normal text-system-black text-center mb-2">
-                Selesaikan Soal
-              </p>
-              <p className="regular-small text-system-black text-center">
-                Isilah jawaban dibawah ini sesuai dengan kepribadianmu
-              </p>
+              <img className="mb-2 mobile:mr-4" src={PencilGreenIcon} alt="" />
+              <div className="flex flex-col">
+                <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
+                  Selesaikan Soal
+                </p>
+                <p className="regular-small text-system-black desktop:text-center mobile:text-left">
+                  Isilah jawaban dibawah ini sesuai dengan kepribadianmu
+                </p>
+              </div>
             </div>
             <div
-              className={`bg-system-white ${style["item"]} px-4 py-6 flex flex-col justify-center items-center`}
+              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
             >
-              <img className="mb-2" src={PersonIcon} alt="" />
-              <p className="bold-normal text-system-black text-center mb-2">
-                Dapatkan Hasil Tes
-              </p>
-              <p className="regular-small text-system-black text-center">
-                Hasil tes berisi berisi tentang tingkat resiliensimu
-              </p>
+              <img className="mb-2 mobile:mr-4" src={PersonIcon} alt="" />
+              <div className="flex flex-col">
+                <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
+                  Dapatkan Hasil Tes
+                </p>
+                <p className="regular-small text-system-black desktop:text-center mobile:text-left">
+                  Hasil tes berisi berisi tentang tingkat resiliensimu
+                </p>
+              </div>
             </div>
             <div
-              className={`bg-system-white ${style["item"]} px-4 py-6 flex flex-col justify-center items-center`}
+              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
             >
-              <img className="mb-2" src={ArrowTopIcon} alt="" />
-              <p className="bold-normal text-system-black text-center mb-2">
-                Tingkatkan Resiliensimu
-              </p>
-              <p className="regular-small text-system-black text-center">
-                Dapatkan saran pengembangan sesuai dengan hasil tes
-              </p>
+              <img className="mb-2 mobile:mr-4" src={ArrowTopIcon} alt="" />
+              <div className="flex flex-col">
+                <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
+                  Tingkatkan Resiliensimu
+                </p>
+                <p className="regular-small text-system-black desktop:text-center mobile:text-left">
+                  Dapatkan saran pengembangan sesuai dengan hasil tes
+                </p>
+              </div>
             </div>
           </div>
         </Container>
@@ -138,16 +147,14 @@ export default function Home() {
               <p className="bold-head-1 text-system-black mb-6">
                 Penasaran dengan tingkat resiliensi yang dimiliki?
               </p>
-            <Link to={"/panduan"}>
-
-            </Link>
-              <Button>Ikuti Tes</Button>
-
+              <Link to={"/panduan"}>
+                <Button>Ikuti Tes</Button>
+              </Link>
             </div>
             <img
               src={IkutiTesImage}
               alt=""
-              className="absolute top-0 right-0"
+              className="absolute top-0 right-0 show-on-desktop-only"
             />
           </div>
         </Container>

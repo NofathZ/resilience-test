@@ -6,3 +6,25 @@ html,
 body {
   background-color: #f3f4f6;
 }
+
+@media screen and (max-width: 960px) {
+  .show-on-desktop-only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 961px) {
+  .show-on-mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .show-on-desktop-only-lg {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1166px) {
+  .show-on-mobile-only-lg {
+    display: none !important;
+  }
+}

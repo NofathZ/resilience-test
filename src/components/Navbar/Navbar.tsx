@@ -11,7 +11,7 @@ export function Navbar() {
 
   return (
     <div
-      className="w-full flex justify-center items-center bg-transparent top-0 fixed"
+      className="w-full flex justify-center items-center bg-transparent"
       style={style}
     >
       <p className="extra-bold-head-3">Logo</p>

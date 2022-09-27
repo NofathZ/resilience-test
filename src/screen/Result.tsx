@@ -315,6 +315,8 @@ export default function Result() {
     },
   ]);
 
+  const [showSolutionsMobile, setShowSolutionMobile] = useState(2);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -322,8 +324,8 @@ export default function Result() {
   return (
     <LayoutDefault>
       <Container>
-        <div className={`w-full ${style["header"]} flex mb-16`}>
-          <img src={ResultHeadImage} alt="" />
+        <div className={`w-full ${style["header"]} flex mb-16 mobile:px-4`}>
+          <img className="show-on-desktop-only" src={ResultHeadImage} alt="" />
           <div className="flex flex-col justify-center">
             <p className="medium-normal text-brand-primary">
               <b>Hasil Tes Kamu</b>
@@ -348,7 +350,7 @@ export default function Result() {
       </Container>
       <Container>
         <div
-          className={`${style["cat-title"]} text-system-black text-center mb-10`}
+          className={`${style["cat-title"]} text-system-black text-center mb-10 mobile:px-4`}
         >
           10 Cara yang dapat{" "}
           <span className="text-brand-secondary">membuat kamu</span> untuk{" "}
@@ -358,8 +360,8 @@ export default function Result() {
         </div>
       </Container>
       <Container>
-        <div className={`${style["solutions"]}`}>
-          <div className="pr-16">
+        <div className={`${style["solutions"]} mobile:px-4`}>
+          <div className="pr-16 show-on-desktop-only">
             {solutions.map((solution, idx) => (
               <div
                 className={`${
@@ -375,10 +377,15 @@ export default function Result() {
               </div>
             ))}
           </div>
-          <div>{solutions[showSolution].value}</div>
+          <div className="mb-6">
+            {solutions[showSolutionsMobile * 2 - 1 - 1].value}
+          </div>
+          <div className="mb-6">
+            {solutions[showSolutionsMobile * 2 - 1].value}
+          </div>
         </div>
       </Container>
-      <div className="py-10 my-20">
+      <div className="py-10 my-20 mobile:px-4">
         <Container>
           <div
             className={`${style["card"]} w-full bg-brand-secondary-tint relative`}
@@ -392,7 +399,7 @@ export default function Result() {
             <img
               src={TanyaAhliImage}
               alt=""
-              className="absolute top-0 right-0"
+              className="show-on-desktop-only absolute top-0 right-0"
             />
           </div>
         </Container>

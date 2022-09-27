@@ -1,7 +1,7 @@
 .head-rectangle {
   width: 855px;
   height: 586px;
-  background: url("/src/assets/home-rectangle-1.svg");
+  /* background: url("/src/assets/home-rectangle-1.svg"); */
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -64,4 +64,36 @@
   display: grid;
   grid-template-columns: auto 425px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 961px) {
+  .head-rectangle {
+    height: auto;
+  }
+
+  .description {
+    grid-template-columns: auto;
+  }
+
+  .goals-desc {
+    grid-template-columns: auto;
+    row-gap: 24px;
+  }
+
+  .goals-item {
+    grid-template-columns: auto;
+    row-gap: 16px;
+  }
+
+  .card {
+    height: auto;
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .goals-item {
+    grid-template-columns: auto;
+    row-gap: 16px;
+  }
 }

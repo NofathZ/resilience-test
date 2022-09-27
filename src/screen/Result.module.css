@@ -24,3 +24,14 @@
   grid-template-columns: auto 425px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 960px) {
+  .solutions {
+    grid-template-columns: auto;
+  }
+
+  .card {
+    height: auto;
+    grid-template-columns: auto;
+  }
+}

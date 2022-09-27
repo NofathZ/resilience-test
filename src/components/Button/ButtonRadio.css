@@ -8,7 +8,6 @@
   width: 70px;
   height: 70px;
   border-radius: 100%;
-
   border: 2px solid #cbefe2;
 }
 
@@ -27,4 +26,16 @@ input[type="radio"]:checked ~ label div {
 input[type="radio"]:checked ~ label div div {
   border: 2px solid #2b916c;
   background-color: #cbefe2;
+}
+
+@media screen and (max-width: 960px) {
+  .radio-button-outer {
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio-button-inner {
+    width: 40px;
+    height: 40px;
+  }
 }
