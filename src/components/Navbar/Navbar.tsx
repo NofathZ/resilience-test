@@ -46,7 +46,7 @@ export function NavbarBGChanged() {
       className="w-full flex justify-center items-center bg-transparent top-0 fixed"
       style={{
         ...style,
-        ...(changeBG && { backgroundColor: "black" }),
+        ...(changeBG && { backgroundColor: "#F3F4F6" }),
       }}
     >
       <p className="extra-bold-head-3">Logo</p>
