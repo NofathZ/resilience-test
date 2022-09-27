@@ -108,6 +108,7 @@
   .card {
     height: auto;
     grid-template-columns: auto;
+    border-radius: 0;
   }
 }
 

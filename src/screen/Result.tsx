@@ -50,7 +50,7 @@ export default function Result() {
             tangguh cenderung memaksimalkan waktu yang ia miliki untuk mencapai
             visi yang telah mereka tetapkan.
           </p>
-          <p className="regular-small text-system-black text-justify mb-8">
+          <p className="regular-small text-system-black text-justify">
             Visi yang dibuat harus bulat dan terencana dengan baik sehingga
             tidak membuang waktu untuk mimpi yang tidak mungkin atau mendambakan
             hal-hal yang tidak akan pernah mereka miliki.
@@ -454,7 +454,7 @@ export default function Result() {
           </svg>
         </div>
       </Container>
-      <div className="py-10 my-20 mobile:px-4">
+      <div className="py-10 my-20 mobile">
         <Container>
           <div
             className={`${style["card"]} w-full bg-brand-secondary-tint relative`}

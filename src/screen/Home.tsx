@@ -147,7 +147,7 @@ export default function Home() {
               <p className="bold-head-1 text-system-black mb-6">
                 Penasaran dengan tingkat resiliensi yang dimiliki?
               </p>
-              <Link to={"/panduan"}>
+              <Link className="flex" to={"/panduan"}>
                 <Button>Ikuti Tes</Button>
               </Link>
             </div>

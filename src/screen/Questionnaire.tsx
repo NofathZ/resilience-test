@@ -69,8 +69,6 @@ export default function Questionnaire() {
 
   const setScore = () => {
     let totalScore = questionAnswer.reduce((acc, curr) => acc + curr, 0);
-    console.log(totalScore);
-
     let cat = scoreCat.find(
       (score) => totalScore >= score.scoreMin && totalScore <= score.scoreMax
     );
