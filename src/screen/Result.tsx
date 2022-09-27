@@ -387,7 +387,7 @@ export default function Result() {
             {solutions[showSolutionsMobile * 2 - 1].value}
           </div>
         </div>
-        <div className="mobile:px-4 flex justify-between items-center">
+        <div className="mobile:px-4 flex justify-between items-center show-on-mobile-only mt-10">
           <svg
             width="24"
             height="24"
