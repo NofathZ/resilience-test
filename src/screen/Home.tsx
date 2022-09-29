@@ -1,15 +1,14 @@
 import { useEffect } from "react";
 import { Button } from "../components/Button/Button";
-import LayoutBackgroundChange from "../layouts/BackgroundChange";
 import style from "./Home.module.css";
 import Container from "../components/Container/Container";
+import { Link } from "react-router-dom";
 
 import HomeDescImage from "../assets/home-desc.png";
 import PencilGreenIcon from "../assets/icon/pencil-green.svg";
 import ArrowTopIcon from "../assets/icon/arrow-top-red.svg";
 import PersonIcon from "../assets/icon/person-yellow.svg";
 import IkutiTesImage from "../assets/ikuti-tes.png";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -17,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <LayoutBackgroundChange>
+    <>
       <div className="flex justify-center items-center mb-10">
         <div
           className={`${style["head-rectangle"]} desktop:px-32 flex justify-center items-center pt-20 mobile:px-4`}
@@ -159,6 +158,6 @@ export default function Home() {
           </div>
         </Container>
       </div>
-    </LayoutBackgroundChange>
+    </>
   );
 }

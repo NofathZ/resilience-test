@@ -1,15 +1,14 @@
 import Container from "../components/Container/Container";
-import LayoutDefault from "../layouts/Default";
 import style from "./Questionnaire.module.css";
 import homeStyle from "./Home.module.css";
 import { useEffect, useState } from "react";
 import { Button, ButtonDisabled } from "../components/Button/Button";
 import { useNavigate } from "react-router-dom";
+import Question from "../components/Question/Question";
 
 import PencilGreenIcon from "../assets/icon/pencil-green.svg";
 import ArrowTopIcon from "../assets/icon/arrow-top-red.svg";
 import PersonIcon from "../assets/icon/person-yellow.svg";
-import Question from "../components/Question/Question";
 
 export default function Questionnaire() {
   let navigate = useNavigate();
@@ -77,7 +76,7 @@ export default function Questionnaire() {
   };
 
   return (
-    <LayoutDefault>
+    <>
       <div className={`w-full bg-brand-secondary-tint ${style["header"]}`}>
         <p
           className={`${style["text"]} text-system-black text-center mobile:px-4`}
@@ -158,6 +157,6 @@ export default function Questionnaire() {
           </div>
         </Container>
       </div>
-    </LayoutDefault>
+    </>
   );
 }

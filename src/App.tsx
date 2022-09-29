@@ -4,10 +4,11 @@ import Home from "./screen/Home";
 import Questionnaire from "./screen/Questionnaire";
 import Result from "./screen/Result";
 import Guide from "./screen/Guide";
+import LayoutDefault from "./layouts/Default";
 
 function App() {
   return (
-    <div>
+    <LayoutDefault>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/panduan" element={<Guide />} />
@@ -15,7 +16,7 @@ function App() {
         <Route path="/hasil" element={<Navigate to={"/kuesioner"} replace />} />
         <Route path="/hasil/:type" element={<Result />} />
       </Routes>
-    </div>
+    </LayoutDefault>
   );
 }
 

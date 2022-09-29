@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button, ButtonOutline } from "../components/Button/Button";
 import Container from "../components/Container/Container";
-import LayoutDefault from "../layouts/Default";
 
 export default function Guide() {
   return (
-    <LayoutDefault>
+    <>
       <div className="mobile:px-4 desktop:m-16 mobile:mt-6 mobile:mb-10">
         <Container>
           <p className="bold-head-2 text-system-black text-center mb-4">
@@ -69,6 +68,6 @@ export default function Guide() {
           </div>
         </Container>
       </div>
-    </LayoutDefault>
+    </>
   );
 }

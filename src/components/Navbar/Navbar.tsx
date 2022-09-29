@@ -1,36 +1,37 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-export function Navbar() {
-  const style = {
-    height: "88px",
-    filter: "drop-shadow(0px 4px 15px rgba(55, 184, 136, 0.1))",
-    transition: ".2s",
-    boxShadow: "0px 4px 15px rgba(55, 184, 136, 0.1)",
-    zIndex: "999",
-  };
+import ResilienceTestLogo from "../../assets/rt-logo.png";
 
-  return (
-    <div
-      className="w-full flex justify-center items-center bg-transparent"
-      style={style}
-    >
-      <p className="extra-bold-head-3">Logo</p>
-    </div>
-  );
-}
+const LogoStyle = {
+  height: "50px",
+  width: "auto",
+};
 
-export function NavbarBGChanged() {
-  const style = {
-    height: "88px",
-    filter: "drop-shadow(0px 4px 15px rgba(55, 184, 136, 0.1))",
-    transition: ".2s",
-    zIndex: "999",
-  };
+const style = {
+  height: "88px",
+  filter: "drop-shadow(0px 4px 15px rgba(55, 184, 136, 0.1))",
+  boxShadow: "0px 4px 15px rgba(55, 184, 136, 0.1)",
+  transition: ".2s",
+  zIndex: "999",
+};
+
+export default function NavbarBGChanged() {
+  const location = useLocation();
 
   useEffect(() => {
-    window.addEventListener("scroll", () => changeBackground(), true);
-  });
+    if (window.location.pathname === "/") {
+      setUseBGChange(true)
+      window.addEventListener("scroll", () => changeBackground(), true);
+    }
+    else {
+      setUseBGChange(false)
+      setChangeBG(true)
+    }
+  }, [location]);
 
+  const [useBGChange, setUseBGChange] = useState(true);
   const [changeBG, setChangeBG] = useState(false);
 
   const changeBackground = () => {
@@ -43,13 +44,15 @@ export function NavbarBGChanged() {
 
   return (
     <div
-      className="w-full flex justify-center items-center bg-transparent top-0 fixed"
+      className={`w-full flex justify-center items-center bg-transparent ${useBGChange && "top-0 fixed"}`}
       style={{
         ...style,
         ...(changeBG && { backgroundColor: "#F3F4F6" }),
       }}
     >
-      <p className="extra-bold-head-3">Logo</p>
+      <Link to={"/"}>
+        <img className="cursor-pointer" src={ResilienceTestLogo} style={LogoStyle} alt="" />
+      </Link>
     </div>
   );
 }

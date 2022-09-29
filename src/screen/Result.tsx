@@ -1,4 +1,3 @@
-import LayoutDefault from "../layouts/Default";
 import style from "./Result.module.css";
 import { useState, useEffect } from "react";
 import Container from "../components/Container/Container";
@@ -338,7 +337,7 @@ export default function Result() {
   }, []);
 
   return (
-    <LayoutDefault>
+    <>
       <Container>
         <div className={`w-full ${style["header"]} flex mb-16 mobile:px-4`}>
           <img className="show-on-desktop-only" src={ResultHeadImage} alt="" />
@@ -491,6 +490,6 @@ export default function Result() {
           </div>
         </Container>
       </div>
-    </LayoutDefault>
+    </>
   );
 }
