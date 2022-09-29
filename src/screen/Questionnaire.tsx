@@ -135,8 +135,7 @@ export default function Questionnaire() {
         </Container>
       </div>
       <div
-        style={{ marginTop: "150px", marginBottom: "72px" }}
-        className="mobile:px-4 mobile:mt-10"
+        className={`mobile:px-4 mobile:mt-10 ${style['quesioner-box']}`}
       >
         <Container>
           <div className="mx-auto" style={{ maxWidth: "860px" }}>
