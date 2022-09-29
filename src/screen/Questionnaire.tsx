@@ -79,103 +79,65 @@ export default function Questionnaire() {
   return (
     <LayoutDefault>
       <div className={`w-full bg-brand-secondary-tint ${style["header"]}`}>
-        <p className={`${style["text"]} text-system-black text-center`}>
+        <p
+          className={`${style["text"]} text-system-black text-center mobile:px-4`}
+        >
           Tes Resiliensi
         </p>
-        <p className="regular-normal text-center">
+        <p className="regular-normal text-center mobile:px-4">
           Adaptasi Dari Nicholson McBride Resilience Questionnaire
         </p>
-        <div
-          className={`${homeStyle["goals-item"]} show-on-mobile-only-lg mobile:px-4 mt-10`}
-        >
+        <Container>
           <div
-            className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
+            className={`${homeStyle["goals-item"]} desktop-lg:relative mt-10 mobile:px-4 desktop-lg:px-0`}
+            style={{ bottom: "-15px" }}
           >
-            <img className="mb-2 mobile:mr-4" src={PencilGreenIcon} alt="" />
-            <div className="flex flex-col">
-              <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
-                Selesaikan Soal
-              </p>
-              <p className="regular-small text-system-black desktop:text-center mobile:text-left">
-                Isilah jawaban dibawah ini sesuai dengan kepribadianmu
-              </p>
+            <div
+              className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row desktop:justify-center mobile:justify-start desktop:items-center mobile:items-start`}
+            >
+              <img className="mb-2 mobile:mr-4" src={PencilGreenIcon} alt="" />
+              <div className="flex flex-col">
+                <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
+                  Selesaikan Soal
+                </p>
+                <p className="regular-small text-system-black desktop:text-center mobile:text-left">
+                  Isilah jawaban dibawah ini sesuai dengan kepribadianmu
+                </p>
+              </div>
+            </div>
+            <div
+              className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row desktop:justify-center mobile:justify-start desktop:items-center mobile:items-start`}
+            >
+              <img className="mb-2 mobile:mr-4" src={PersonIcon} alt="" />
+              <div className="flex flex-col">
+                <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
+                  Dapatkan Hasil Tes
+                </p>
+                <p className="regular-small text-system-black desktop:text-center mobile:text-left">
+                  Hasil tes berisi berisi tentang tingkat resiliensimu
+                </p>
+              </div>
+            </div>
+            <div
+              className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row desktop:justify-center mobile:justify-start desktop:items-center mobile:items-start`}
+            >
+              <img className="mb-2 mobile:mr-4" src={ArrowTopIcon} alt="" />
+              <div className="flex flex-col">
+                <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
+                  Tingkatkan Resiliensimu
+                </p>
+                <p className="regular-small text-system-black desktop:text-center mobile:text-left">
+                  Dapatkan saran pengembangan sesuai dengan hasil tes
+                </p>
+              </div>
             </div>
           </div>
-          <div
-            className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
-          >
-            <img className="mb-2 mobile:mr-4" src={PersonIcon} alt="" />
-            <div className="flex flex-col">
-              <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
-                Dapatkan Hasil Tes
-              </p>
-              <p className="regular-small text-system-black desktop:text-center mobile:text-left">
-                Hasil tes berisi berisi tentang tingkat resiliensimu
-              </p>
-            </div>
-          </div>
-          <div
-            className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
-          >
-            <img className="mb-2 mobile:mr-4" src={ArrowTopIcon} alt="" />
-            <div className="flex flex-col">
-              <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
-                Tingkatkan Resiliensimu
-              </p>
-              <p className="regular-small text-system-black desktop:text-center mobile:text-left">
-                Dapatkan saran pengembangan sesuai dengan hasil tes
-              </p>
-            </div>
-          </div>
-        </div>
+        </Container>
       </div>
-      <Container>
-        <div
-          className={`${homeStyle["goals-item"]} show-on-desktop-only-lg relative mobile:px-4`}
-          style={{ top: "-120px" }}
-        >
-          <div
-            className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
-          >
-            <img className="mb-2 mobile:mr-4" src={PencilGreenIcon} alt="" />
-            <div className="flex flex-col">
-              <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
-                Selesaikan Soal
-              </p>
-              <p className="regular-small text-system-black desktop:text-center mobile:text-left">
-                Isilah jawaban dibawah ini sesuai dengan kepribadianmu
-              </p>
-            </div>
-          </div>
-          <div
-            className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
-          >
-            <img className="mb-2 mobile:mr-4" src={PersonIcon} alt="" />
-            <div className="flex flex-col">
-              <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
-                Dapatkan Hasil Tes
-              </p>
-              <p className="regular-small text-system-black desktop:text-center mobile:text-left">
-                Hasil tes berisi berisi tentang tingkat resiliensimu
-              </p>
-            </div>
-          </div>
-          <div
-            className={`bg-system-white ${homeStyle["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
-          >
-            <img className="mb-2 mobile:mr-4" src={ArrowTopIcon} alt="" />
-            <div className="flex flex-col">
-              <p className="bold-normal text-system-black desktop:text-center mobile:text-left mb-2">
-                Tingkatkan Resiliensimu
-              </p>
-              <p className="regular-small text-system-black desktop:text-center mobile:text-left">
-                Dapatkan saran pengembangan sesuai dengan hasil tes
-              </p>
-            </div>
-          </div>
-        </div>
-      </Container>
-      <div style={{ marginBottom: "72px" }} className="mobile:px-4 mobile:mt-10">
+      <div
+        style={{ marginTop: "150px", marginBottom: "72px" }}
+        className="mobile:px-4 mobile:mt-10"
+      >
         <Container>
           <div className="mx-auto" style={{ maxWidth: "860px" }}>
             {questionData.map((question, idx) => (

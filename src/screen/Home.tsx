@@ -18,9 +18,9 @@ export default function Home() {
 
   return (
     <LayoutBackgroundChange>
-      <div className="flex justify-center items-center mb-10 mobile:px-4">
+      <div className="flex justify-center items-center mb-10">
         <div
-          className={`${style["head-rectangle"]} desktop:px-32 flex justify-center items-center pt-20`}
+          className={`${style["head-rectangle"]} desktop:px-32 flex justify-center items-center pt-20 mobile:px-4`}
         >
           <div>
             <p className="medium-tiny text-brand-primary text-center mb-1">
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
           <div className={`${style["goals-item"]}`}>
             <div
-              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
+              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row desktop:justify-center mobile:justify-start desktop:items-center mobile:items-start`}
             >
               <img className="mb-2 mobile:mr-4" src={PencilGreenIcon} alt="" />
               <div className="flex flex-col">
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
+              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row desktop:justify-center mobile:justify-start desktop:items-center mobile:items-start`}
             >
               <img className="mb-2 mobile:mr-4" src={PersonIcon} alt="" />
               <div className="flex flex-col">
@@ -123,7 +123,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row justify-center desktop:items-center mobile:items-start`}
+              className={`bg-system-white ${style["item"]} px-4 py-6 flex desktop:flex-col mobile:flex-row desktop:justify-center mobile:justify-start desktop:items-center mobile:items-start`}
             >
               <img className="mb-2 mobile:mr-4" src={ArrowTopIcon} alt="" />
               <div className="flex flex-col">

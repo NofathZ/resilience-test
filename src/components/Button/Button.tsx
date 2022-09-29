@@ -7,15 +7,17 @@ function Button({
   children,
   onClick,
   minWidth,
+  className
 }: {
   children: ReactNode;
   onClick?: () => void;
   minWidth?: string;
+  className?: string
 }) {
   return (
     <div
       onClick={onClick}
-      className={`bg-brand-secondary text-system-white px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-default"]} flex justify-center items-center`}
+      className={`bg-brand-secondary text-system-white px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-default"]} flex justify-center items-center ${className}`}
       style={{
         minWidth: minWidth,
       }}
@@ -60,15 +62,17 @@ function ButtonOutline({
   children,
   onClick,
   minWidth,
+  className
 }: {
   children: ReactNode;
   onClick?: () => void;
   minWidth?: string;
+  className?: string
 }) {
   return (
     <div
       onClick={onClick}
-      className={`text-center bg-brand-secondary-tint text-brand-secondary px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-outline"]}`}
+      className={`text-center bg-brand-secondary-tint text-brand-secondary px-10 bold-normal cursor-pointer inline-block ${style["button"]} ${style["button-outline"]} ${className}`}
       style={{
         minWidth: minWidth,
       }}

@@ -32,7 +32,8 @@ module.exports = {
     },
     screens: {
       'mobile': '0px',
-      'desktop': '961px'
+      'desktop': '961px',
+      'desktop-lg': "1166px",
     }
   },
   plugins: [],

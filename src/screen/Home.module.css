@@ -1,10 +1,11 @@
 .head-rectangle {
   width: 855px;
-  height: 586px;
-  /* background: url("/src/assets/home-rectangle-1.svg"); */
+  height: 632px;
+  background: url("/src/assets/home-rectangle-1.svg");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center;
+  background-position: center bottom;
+  padding-bottom: 48px;
 }
 
 .title {

@@ -6,7 +6,7 @@ import LayoutDefault from "../layouts/Default";
 export default function Guide() {
   return (
     <LayoutDefault>
-      <div className="mobile:px-4">
+      <div className="mobile:px-4 desktop:m-16 mobile:mt-6 mobile:mb-10">
         <Container>
           <p className="bold-head-2 text-system-black text-center mb-4">
             Baca panduan pengisiannya, yuk!
@@ -43,21 +43,29 @@ export default function Guide() {
             anda melainkan untuk mengetahui kecenderungan anda dalam beradaptasi
             untuk bangkit saat menghadapi situasi sulit.
           </p>
-
-          <div className="flex justify-center items-center mobile:flex-col desktop:flex-row mt-16 mb-10">
+          <div
+            className="flex justify-center items-center mobile:flex-col desktop:flex-row mt-16 mb-10"
+          >
             <Link className="show-on-desktop-only" to={"/"}>
               <ButtonOutline minWidth="201px">Batal</ButtonOutline>
             </Link>
-            <Link className="show-on-mobile-only" to={"/kuesioner"}>
-              <Button minWidth="201px">OK, Ikuti Tes</Button>
-            </Link>
-            <div className="mx-2 mobile:my-4"></div>
+            <div className="mx-2"></div>
             <Link className="show-on-desktop-only" to={"/kuesioner"}>
               <Button minWidth="201px">OK, Ikuti Tes</Button>
             </Link>
-            <Link className="show-on-mobile-only" to={"/"}>
-              <ButtonOutline minWidth="201px">Batal</ButtonOutline>
-            </Link>
+            <div className="show-on-mobile-only w-full">
+              <Link to={"/kuesioner"}>
+                <Button className="w-full" minWidth="201px">
+                  OK, Ikuti Tes
+                </Button>
+              </Link>
+              <div className="mobile:my-4"></div>
+              <Link to={"/"}>
+                <ButtonOutline className="w-full" minWidth="201px">
+                  Batal
+                </ButtonOutline>
+              </Link>
+            </div>
           </div>
         </Container>
       </div>

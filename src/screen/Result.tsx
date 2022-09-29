@@ -41,6 +41,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">1. </span>
             Punya Gambaran Kesuksesan
           </p>
           <p className="regular-small text-system-black text-justify mb-8">
@@ -63,6 +64,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">2. </span>
             Meningkatkan value diri
           </p>
           <p className="regular-small text-system-black text-justify">
@@ -99,6 +101,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">3. </span>
             Meningkatkan dan mengendalikan keberhasilan dalam hidup
           </p>
           <p className="regular-small text-system-black text-justify mb-8">
@@ -171,7 +174,10 @@ export default function Result() {
       key: "Lebih Optimis",
       value: (
         <div>
-          <p className="bold-normal text-system-black mb-2">Lebih Optimis</p>
+          <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">4. </span>
+            Lebih Optimis
+          </p>
           <p className="regular-small text-system-black text-justify">
             Optimis adalah salah satu karakteristik yang paling penting dari
             orang yang tangguh. Penting bagi seseorang untuk dapat melihat sisi
@@ -186,7 +192,10 @@ export default function Result() {
       key: "Mengelola Stress",
       value: (
         <div>
-          <p className="bold-normal text-system-black mb-2">Mengelola Stress</p>
+          <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">5. </span>
+            Mengelola Stress
+          </p>
           <p className="regular-small text-system-black text-justify mb-8">
             Stress merupakan bagian dari kehiduan kita. Ketika tubuh merasakan
             ancaman (atau stresor), tubuh akan menjadi sangat waspada, dan
@@ -226,6 +235,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">6. </span>
             Meningkatkan Kemampuan Pengambilan Keputusan
           </p>
           <p className="regular-small text-system-black text-justify">
@@ -246,7 +256,10 @@ export default function Result() {
       key: "Minta Bantuan",
       value: (
         <div>
-          <p className="bold-normal text-system-black mb-2">Minta Bantuan</p>
+          <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">7. </span>
+            Minta Bantuan
+          </p>
           <p className="regular-small text-system-black text-justify">
             Dalam menghadapi suatu masalah, Anda tidak boleh merasa sendirian.
             Seseorang yang tangguh tahu kapan waktunya meminta bantuan orang
@@ -262,6 +275,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">8. </span>
             Menghadapi Konflik
           </p>
           <p className="regular-small text-system-black text-justify">
@@ -280,6 +294,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">9. </span>
             Belajar dari Pengalaman
           </p>
           <p className="regular-small text-system-black text-justify">
@@ -296,6 +311,7 @@ export default function Result() {
       value: (
         <div>
           <p className="bold-normal text-system-black mb-2">
+            <span className="show-on-mobile-only">10. </span>
             Menjadi Diri Sendiri
           </p>
           <p className="regular-small text-system-black text-justify">
@@ -337,7 +353,7 @@ export default function Result() {
                     <p
                       className={`${style["cat-title"]} text-system-black mb-4`}
                     >
-                      {desc.category}
+                      {desc.category} Level
                     </p>
                     <p className="regular-normal text-system-black text-justify">
                       {desc.description}
@@ -350,7 +366,7 @@ export default function Result() {
       </Container>
       <Container>
         <div
-          className={`${style["cat-title"]} text-system-black text-center mb-10 mobile:px-4`}
+          className={`bold-head-1 text-system-black text-center mb-10 mobile:px-4`}
         >
           10 Cara yang dapat{" "}
           <span className="text-brand-secondary">membuat kamu</span> untuk{" "}
@@ -372,8 +388,10 @@ export default function Result() {
                 key={idx}
                 onClick={() => setShowSolution(idx)}
               >
-                <span className="mr-4">{idx + 1}.</span>
-                <span>{solution.key}</span>
+                <div className="flex">
+                  <span className="mr-4">{idx + 1}.</span>
+                  <span>{solution.key}</span>
+                </div>
               </div>
             ))}
           </div>
