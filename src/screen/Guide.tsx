@@ -12,26 +12,26 @@ export default function Guide() {
           </p>
           <ol className="regular-normal text-system-black list-decimal pl-6 mb-4 text-justify">
             <li>
-              Gak ada jawaban yang benar atau salah. Isilah dengan jujur sesuai
-              kepribadianmu.
-            </li>
-            <li>Santai aja, tes ini gak diberi waktu, kok.</li>
-            <li>
-              Cari tempat yang nyaman dan kondusif supaya kamu lebih fokus.
+              Cari tempat yang nyaman dan kondusif supaya kamu lebih fokus
+              mengerjakan ya!
             </li>
             <li>
-              Bacalah setiap pertanyaan dengan cermat dan mengindikasikan
-              pilihan yang terbaik bagimu.
+              Engga ada jawaban yang benar / salah. Isilah dengan jujur sesuai
+              kepribadianmu
+            </li>
+            <li>Santai aja, tes ini engga diberi waktu kok.</li>
+            <li>
+              Baca setiap pertanyaan dengan cermat dan pilih jawaban terbaik
+              yang mengindikasikan diri kamu
             </li>
             <li>
-              Mungkin ada beberapa pertanyaan yang menggambarkan situasi yang
-              mungkin kamu rasa tidak relevan dengan kehidupan kamu. Dalam
-              situasi seperti itu, pilihlah jawaban yang kemungkinan besar akan
-              kamu pilih jika kamu pernah berada dalam situasi seperti itu.
+              Mungkin ada beberapa pertanyaan yang saat ini tidak relevan dengan
+              kondisimu. Dalam kondisi ini, pilihlah jawaban yang menurut kamu
+              akan kamu pilih saat berada di kondisi tersebut
             </li>
             <li>
               Hasil tes bisa kamu dapatkan setelah mengisi semua pertanyaan
-              dengan lengkap.
+              dengan lengkap
             </li>
           </ol>
           <p className="bold-normal text-brand-accent1 mb-8">
@@ -42,9 +42,7 @@ export default function Guide() {
             anda melainkan untuk mengetahui kecenderungan anda dalam beradaptasi
             untuk bangkit saat menghadapi situasi sulit.
           </p>
-          <div
-            className="flex justify-center items-center mobile:flex-col desktop:flex-row mt-16 mb-10"
-          >
+          <div className="flex justify-center items-center mobile:flex-col desktop:flex-row mt-16 mb-10">
             <Link className="show-on-desktop-only" to={"/"}>
               <ButtonOutline minWidth="201px">Batal</ButtonOutline>
             </Link>
