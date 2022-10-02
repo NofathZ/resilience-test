@@ -15,6 +15,7 @@ function App() {
         <Route path="/kuesioner" element={<Questionnaire />} />
         <Route path="/hasil" element={<Navigate to={"/kuesioner"} replace />} />
         <Route path="/hasil/:type" element={<Result />} />
+        <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
     </LayoutDefault>
   );
