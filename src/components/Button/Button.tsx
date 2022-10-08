@@ -7,12 +7,12 @@ function Button({
   children,
   onClick,
   minWidth,
-  className
+  className,
 }: {
   children: ReactNode;
   onClick?: () => void;
   minWidth?: string;
-  className?: string
+  className?: string;
 }) {
   return (
     <div
@@ -37,24 +37,37 @@ function ButtonDisabled({ children }: { children: ReactNode }) {
   );
 }
 
-function ButtonWhatsapp({ children }: { children: ReactNode }) {
+function ButtonWhatsapp({
+  children,
+  redirectTo,
+}: {
+  children: ReactNode;
+  redirectTo: string;
+}) {
   return (
-    <div
-      className={`bg-brand-primary text-system-white px-10 bold-normal cursor-default inline-block ${style["button"]}`}
+    <a
+      className="cursor-pointer"
+      target="_blank"
+      href={redirectTo}
+      rel="noreferrer"
     >
-      <div className="w-full h-full flex justify-center items-center">
-        <span>
-          <img
-            className="float-left mr-3"
-            src={WhatsappLogo}
-            width={24}
-            height={24}
-            alt=""
-          />
-        </span>
-        <div>{children}</div>
+      <div
+        className={`bg-brand-primary text-system-white px-10 bold-normal inline-block ${style["button"]}`}
+      >
+        <div className="w-full h-full flex justify-center items-center">
+          <span>
+            <img
+              className="float-left mr-3"
+              src={WhatsappLogo}
+              width={24}
+              height={24}
+              alt=""
+            />
+          </span>
+          <div>{children}</div>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -62,12 +75,12 @@ function ButtonOutline({
   children,
   onClick,
   minWidth,
-  className
+  className,
 }: {
   children: ReactNode;
   onClick?: () => void;
   minWidth?: string;
-  className?: string
+  className?: string;
 }) {
   return (
     <div

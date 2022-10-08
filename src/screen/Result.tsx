@@ -480,7 +480,7 @@ export default function Result() {
               <p className="bold-head-1 text-system-black mb-6">
                 Masih bingung soal resiliensi? Yuk tanya ahlinya!
               </p>
-              <ButtonWhatsapp>Tanya Sekarang</ButtonWhatsapp>
+              <ButtonWhatsapp redirectTo="https://wa.me/+6285878876171">Tanya Sekarang</ButtonWhatsapp>
             </div>
             <img
               src={TanyaAhliImage}
